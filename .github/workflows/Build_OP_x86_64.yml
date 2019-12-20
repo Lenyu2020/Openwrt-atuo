@@ -63,9 +63,9 @@ jobs:
         REPO_BRANCH: master
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
       
-    #- name: Aad Lienol feeds
-       #run: |
-        #echo "src-git lienol https://github.com/Lienol/openwrt-package" >> openwrt/feeds.conf.default
+    - name: Aad Lienol feeds
+      run: |
+         echo "src-git lienol https://github.com/Lienol/openwrt-package" >> openwrt/feeds.conf.default
       # sed -i '$a\src-git lienol https://github.com/Lienol/openwrt-package' openwrt/feeds.conf.default
 
     - name: Update & Install feeds
