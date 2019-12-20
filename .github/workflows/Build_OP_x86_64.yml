@@ -65,8 +65,8 @@ jobs:
       
     - name: Aad Lienol feeds
       run: |
-      sed -i '$a\要插入的文字' file.txt
-      sed -i '$a\src-git lienol https://github.com/Lienol/openwrt-package' openwrt/
+        echo "src-git lienol https://github.com/Lienol/openwrt-package" >> openwrt/feeds.conf.default
+      # sed -i '$a\src-git lienol https://github.com/Lienol/openwrt-package' openwrt/feeds.conf.default
 
     - name: Update & Install feeds
       working-directory: ./openwrt
