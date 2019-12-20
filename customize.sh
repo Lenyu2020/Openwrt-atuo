@@ -10,8 +10,8 @@
   sed -i 's/KERNEL_PATCHVER:=4.19/KERNEL_PATCHVER:=4.14/g' openwrt/target/linux/x86/Makefile
 #Aad Lienol feeds
 #使用echo命令添加
-  echo "src-git lienol https://github.com/Lienol/openwrt-package" >> openwrt/feeds.conf.default
+  #echo "src-git lienol https://github.com/Lienol/openwrt-package" >> openwrt/feeds.conf.default
 #sed命令也是可行的
 # sed -i '$a\src-git lienol https://github.com/Lienol/openwrt-package' openwrt/feeds.conf.default
 #Update & Install feeds
-  cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a && ./scripts/feeds install -a
+  #cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a && ./scripts/feeds install -a
