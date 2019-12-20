@@ -95,9 +95,19 @@ jobs:
       run: |
         echo -e "$(nproc) thread build."
         make -j$(nproc) V=s
+      
+    - name: delete packages
+      working-directory: ./openwrt
+      run: |
+        rm -rf openwrt/bin/targets/x86/64/packages
+        rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-combined-squashfs.vmdk
+        rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-generic.manifest
+        rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-rootfs-squashfs.img.gz
+        rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-uefi-gpt-squashfs.vmdk
+        rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-vmlinuz
 
     - name : Upload artifact
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@master     
       with:
         name: OpenWrt
-        path: openwrt/bin
+        path: openwrt/bin/targets/x86/64
