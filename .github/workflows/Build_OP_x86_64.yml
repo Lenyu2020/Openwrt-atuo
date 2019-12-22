@@ -8,18 +8,18 @@
 name: Build_x86_64
 
 on: 
-  release:
-    types: [published]
+ # release:
+ #   types: [published]
 
   #push:
   #  branches: 
   #    - master
 
     schedule:
-     - cron: 0 7 * * *
+      - cron: 0 7 * * *
   
     watch:
-      types: [started]
+     types: [started]
 
 jobs:
   build:
