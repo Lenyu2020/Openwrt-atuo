@@ -112,11 +112,11 @@ jobs:
     - name: delete packages
       working-directory: ./openwrt
       run: |
-        rm -rf openwrt/bin/targets/x86/64/packages
-        rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-generic.manifest
-        rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-rootfs-squashfs.img.gz
-        rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-combined-squashfs.vmdk
-        rm -rf openwrt/bin/targets/x86/64/config.seed
+        rm -rf bin/targets/x86/64/packages
+        rm -rf bin/targets/x86/64/openwrt-x86-64-generic.manifest
+        rm -rf bin/targets/x86/64/openwrt-x86-64-rootfs-squashfs.img.gz
+        rm -rf bin/targets/x86/64/openwrt-x86-64-combined-squashfs.vmdk
+        rm -rf bin/targets/x86/64/config.seed
         
     - name : Upload artifact
       uses: actions/upload-artifact@master     
