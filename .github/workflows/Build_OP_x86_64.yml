@@ -113,7 +113,6 @@ jobs:
       working-directory: ./openwrt
       run: |
         rm -rf openwrt/bin/targets/x86/64/packages
-        rm -rf openwrt/bin/packages
         rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-generic.manifest
         rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-rootfs-squashfs.img.gz
         rm -rf openwrt/bin/targets/x86/64/openwrt-x86-64-combined-squashfs.vmdk
