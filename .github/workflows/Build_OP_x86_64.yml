@@ -117,6 +117,7 @@ jobs:
         rm -rf bin/targets/x86/64/openwrt-x86-64-rootfs-squashfs.img.gz
         rm -rf bin/targets/x86/64/openwrt-x86-64-combined-squashfs.vmdk
         rm -rf bin/targets/x86/64/config.seed
+        rm -rf bin/targets/x86/64/openwrt-x86-64-vmlinuz
         
     - name : Upload artifact
       uses: actions/upload-artifact@master     
