@@ -118,6 +118,8 @@ jobs:
         rm -rf bin/targets/x86/64/openwrt-x86-64-combined-squashfs.vmdk
         rm -rf bin/targets/x86/64/config.seed
         rm -rf bin/targets/x86/64/openwrt-x86-64-vmlinuz
+        sleep 3
+        mv openwrt-x86-64-combined-squashfs.img.gz openwrt_x86-64-`date '+%m%d'`_4.14.xxx_dev_trojan.img.gz
         
     - name : Upload artifact
       uses: actions/upload-artifact@master     
