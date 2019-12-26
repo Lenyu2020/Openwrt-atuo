@@ -16,7 +16,7 @@ on:
   #    - master
 
     schedule:
-      - cron: 0 7 * * *
+      - cron: 0 6 * * *
   
     watch:
      types: [started]
@@ -120,7 +120,7 @@ jobs:
         rm -rf bin/targets/x86/64/openwrt-x86-64-vmlinuz
         sleep 3
         mv bin/targets/x86/64/openwrt-x86-64-combined-squashfs.img.gz bin/targets/x86/64/openwrt_x86-64-`date '+%m%d'`_4.14.xxx_dev_trojan.img.gz
-        
+        mv bin/targets/x86/64/sha256sums mv bin/targets/x86/64/sha256sums.txt
     - name : Upload artifact
       uses: actions/upload-artifact@master     
       with:
