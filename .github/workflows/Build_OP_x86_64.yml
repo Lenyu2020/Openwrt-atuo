@@ -65,7 +65,7 @@ jobs:
     
     - name: 添加Server酱,微信推送插件
       run: |
-        cd openwrt && git clone https://github.com/tty228/luci-app-serverchan
+        cd openwrt/package && git clone https://github.com/tty228/luci-app-serverchan
       
     - name: Aad Lienol feeds
       run: |
