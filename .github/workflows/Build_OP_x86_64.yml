@@ -63,9 +63,9 @@ jobs:
         REPO_BRANCH: master
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
     
-    - name: 添加Server酱,微信推送插件
-      run: |
-        cd openwrt/package && git clone https://github.com/tty228/luci-app-serverchan
+  #  - name: 添加Server酱,微信推送插件
+  #    run: |
+  #     cd openwrt/package && git clone https://github.com/tty228/luci-app-serverchan
       
     - name: Aad Lienol feeds
       run: |
