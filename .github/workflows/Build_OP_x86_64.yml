@@ -122,7 +122,7 @@ jobs:
         rm -rf bin/targets/x86/64/config.seed
         rm -rf bin/targets/x86/64/openwrt-x86-64-vmlinuz
         sleep 3
-        stre=`sed '10!d' openwrt/include/kernel-version.mk` >nul 2>nul
+        stre=`sed '10!d'  include/kernel-version.mk` >nul 2>nul
         sleep 2
         mv bin/targets/x86/64/openwrt-x86-64-combined-squashfs.img.gz  bin/targets/x86/64/openwrt_x86-64-`date '+%m%d'`_4.14.`echo ${stre#* .}`_dev_Lenyu.img.gz
         mv bin/targets/x86/64/sha256sums bin/targets/x86/64/sha256sums.txt
