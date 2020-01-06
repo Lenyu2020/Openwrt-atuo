@@ -126,6 +126,7 @@ jobs:
         sleep 2
         mv bin/targets/x86/64/openwrt-x86-64-combined-squashfs.img.gz  bin/targets/x86/64/openwrt_x86-64-`date '+%m%d'`_4.14.`echo ${stre#* .}`_dev_Lenyu.img.gz
         mv bin/targets/x86/64/sha256sums bin/targets/x86/64/sha256sums.txt
+        mv bin/targets/x86/64/openwrt-x86-64-uefi-gpt-squashfs.img.gz  bin/targets/x86/64/openwrt_x86-64-`date '+%m%d'`_4.14.`echo ${stre#* .}`_uefi-gpt_dev_Lenyu.img.gz
     - name : Upload artifact
       uses: actions/upload-artifact@master     
       with:
