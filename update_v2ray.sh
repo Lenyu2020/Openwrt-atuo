@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 cd /tmp/tmp
 wget https://github.com/v2ray/v2ray-core/releases/download/v4.22.1/v2ray-linux-64.zip
+echo 正在解压文件...
 unzip -o v2ray-linux-64.zip
 mv -f /tmp/tmp/v2ctl  /usr/bin/v2ray
 mv -f /tmp/tmp/v2ray  /usr/bin/v2ray
