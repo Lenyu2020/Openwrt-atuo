@@ -9,5 +9,5 @@ chmod +x /usr/bin/v2ray/v2ctl
 chmod +x /usr/bin/v2ray/v2ray
 echo 请到路由后台程序保存应用一下XXSSRplus+
 sleep 5
-#运行命令：bash -c "$(wget -O- https://xxxxupdate_v2ray.sh)"
+#运行命令：bash -c "$(wget -O- https://raw.githubusercontent.com/Blueplanet20120/Openwrt-atuo/master/update_v2ray.sh)"
 exit 0
